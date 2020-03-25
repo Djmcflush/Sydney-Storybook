@@ -1,0 +1,12 @@
+#wandatext {
+  position: absolute;
+  margin-left: 110em;
+  top: 120em
+}
+
+#lunatext {
+  position: absolute;
+  margin-left: 190em;
+  top: 150em;
+  bottom: 0;
+}
