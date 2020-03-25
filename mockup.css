@@ -31,28 +31,12 @@ h1{
 .container {
   position: relative;
 }
-.happiness {
-  position: absolute;
-  float:left;
-  margin-left: 60em;
-  margin-top: 13em;
-  display: inline;
-  height: 250px;
-}
+
 
 .navigation{
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-#back{
-  positon: absolute;
-  display: inline;
-  float: left;
-  margin-left: 20em;
-  height: 150px;
-  bottom: 0;
 }
 
 #forward{
