@@ -18,7 +18,7 @@ Instructions based on Terminal commands (Linux, MacOs, or Git Bash for Windows).
 1. Clone git repo
 
 ``` 
-	$ git clone https://github.com/candacewilliams/Sydney-Storybook.git
+	git clone https://github.com/candacewilliams/Sydney-Storybook.git
 ```
 
 2. cd into app folder
