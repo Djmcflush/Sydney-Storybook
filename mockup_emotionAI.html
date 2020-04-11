@@ -1,23 +1,34 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type=text/css href="mockup.css">
-    <script>
-    function imageClick(url) {
-      window.location = url;
-    }
-    </script>
   </head>
   <body>
     <div id="prompt">
-      <h2>How do you think Sydney feels? (or whatever you want to say)</h2>
-      <h2> Your API Code goes in here </h2>
-      <h2> Click on arrow to head to next scene </h2>
+      <header>Face recognition in the browser using Javascript</header>
+    <div class="container">
+      <video id="video" height="500" width="500" autoplay muted></video>
+    </div>
+    <div class="result-container">
+      <div id="emotion">Emotion</div>
+      <div id="gender">Gender</div>
+      <div id="age">Age</div>
+    </div>
     </div>
     <div class="navigation">
     <img id="forward" src="forward_arrow.png" onclick="imageClick('mockup_sleep.html')" >
   </div>
+  <script src="./js/face-api.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    function imageClick(url) {
+      window.location = url;
+    }
+    </script>
   </body>
 </html>

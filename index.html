@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" type=text/css href="mockup.css">
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+      document.getElementById("navigation").style.display = "block";
+    }
+
+    function imageClick(url) {
+      window.location = url;
+    }
+  </script>
+  </head>
+  <body>
+    <div id="prompt">
+      <h2> Sydney is thirsty! Drag the water to her to make her feel better. </h2>
+    </div>
+    <div class= "container">
+    <img id= "sydney" src="sydney.png" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+    <div id="icons">
+      <img id="water" src="water.png" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div hidden id="navigation">
+    <img id="forward" src="forward_arrow.png" onclick="imageClick('mockup_emotionAI.html')" >
+  </div>
+  </body>
+</html>
